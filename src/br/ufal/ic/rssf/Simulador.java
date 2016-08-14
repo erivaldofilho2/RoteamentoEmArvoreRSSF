@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class Simulador {
 	public static void main(String[] args) {
+		
 		Sink sink = new Sink();
 		
 		No no1 = new No(1);
@@ -13,8 +14,8 @@ public class Simulador {
 		No no5 = new No(5);
 		No no6 = new No(8);
 		
-		ArrayList<Sensor> arrayNo = new ArrayList<Sensor>();
-		arrayNo.add(sink);
+		ArrayList<No> arrayNo = new ArrayList<No>();
+
 		arrayNo.add(no1);
 		arrayNo.add(no2);
 		arrayNo.add(no3);

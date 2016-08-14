@@ -2,8 +2,9 @@ package br.ufal.ic.rssf;
 
 public class No implements Sensor {
 	
+	protected int raio = 3;
+	private int id;
 	private Sensor pai;
-	private int raio = 3;
 	private int bateria = 10000;
 	private int custoEnvio = 10;
 	private int custoEspera = 1;
@@ -22,4 +23,5 @@ public class No implements Sensor {
 	public void setPai(Sensor pai){
 		this.pai = pai;
 	}
+	
 }
