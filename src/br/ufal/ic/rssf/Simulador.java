@@ -7,12 +7,14 @@ public class Simulador {
 		
 		Sink sink = new Sink();
 		
-		No no1 = new No(1);
-		No no2 = new No(2);
-		No no3 = new No(7);
-		No no4 = new No(9);
-		No no5 = new No(5);
-		No no6 = new No(8);
+		No no1 = new No(1,1);
+		No no2 = new No(2,2);
+		No no5 = new No(5,3);
+		No no3 = new No(7,4);
+		No no6 = new No(8,5);
+		No no4 = new No(9,6);
+		
+		
 		
 		ArrayList<No> arrayNo = new ArrayList<No>();
 
@@ -23,7 +25,12 @@ public class Simulador {
 		arrayNo.add(no5);
 		arrayNo.add(no6);
 		
-		System.out.println(arrayNo);
+		ArrayList<No> arvore = sink.gerarArvore(arrayNo, sink);
+		
+//		sink.gerarArvore(arvore, sink);
+//		for (No no : arvore) {
+//			System.out.println("ID:"+no.getId()+" PAI:"+ no.getPai().getId());
+//		}
 		
 
 
